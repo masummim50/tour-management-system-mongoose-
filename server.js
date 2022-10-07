@@ -2,7 +2,7 @@ const  mongoose = require("mongoose");
 const dotenv = require("dotenv").config();
 const app = require("./app");
 
-mongoose.connect(process.env.DATABASE_ONLINE).then(()=> {
+mongoose.connect(`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.msj15.mongodb.net/tour-management?retryWrites=true&w=majority`).then(()=> {
     console.log("yay, database is connected")
 })
 
