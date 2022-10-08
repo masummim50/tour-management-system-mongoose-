@@ -10,7 +10,7 @@ app.use(cors())
 app.use(express.json())
 
 app.get("/", (req, res)=> {
-    res.sendFile("./view/index.html")
+    res.sendFile(__dirname + "/view/index.html")
     
 })
 
