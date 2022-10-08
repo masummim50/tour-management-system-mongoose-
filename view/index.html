@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-amber-900">
+    <header class="bg-amber-800 text-white text-center py-4 text-xl">
+        Tour Management Api
+    </header>
+
+    <div class="text-center text-white">
+      <div class="text-[40px] mb-4">Api methods</div>
+      <div class="text-[20px]"><span class="text-green-500 font-bold">GET</span> tours - returns an object with page, pagecount, data[]. with a default limit</div>
+      <a class="text-amber-200" href="https://tour-ak9z.onrender.com/api/v1/tours" target="_blank">https://tour-ak9z.onrender.com/api/v1/tours</a>
+
+      
+      <div class="text-[20px] mt-2">you can provide page, limit, sort and fields like the url below</div>
+      <a class="text-amber-200" href="https://tour-ak9z.onrender.com/api/v1/tours?spaceLeft[gt]=2&spaceLeft[lt]=6&sort=view&page=1&limit=2&fields=name,destination,-_id" target="_blank">https://tour-ak9z.onrender.com/api/v1/tours?spaceLeft[gt]=2&spaceLeft[lt]=6&sort=view&page=1&limit=2&fields=name,destination,-_id</a>
+
+
+      633f150ede5194e1323e1337
+
+      <div class="text-[20px] mt-2"><span class="text-green-500 font-bold">GET</span> specific tour with id, if success returns a object with data property, else returns a object with message property</div>
+      <a class="text-amber-200" href="https://tour-ak9z.onrender.com/api/v1/tours/633f150ede5194e1323e1337" target="_blank">https://tour-ak9z.onrender.com/api/v1/tours/633f150ede5194e1323e1337</a>
+
+      <div class="text-[20px] mt-2"><span class="text-green-500 font-bold">GET</span> the top 3 viewed tours</div>
+      <a class="text-amber-200" href="https://tour-ak9z.onrender.com/api/v1/tours/trending" target="_blank">https://tour-ak9z.onrender.com/api/v1/tours/trending</a>
+
+      <div class="text-[20px] mt-2"><span class="text-green-500 font-bold">GET</span> the cheapest 3 tours</div>
+      <a class="text-amber-200" href="https://tour-ak9z.onrender.com/api/v1/tours/cheapest" target="_blank">https://tour-ak9z.onrender.com/api/v1/tours/cheapest</a>
+
+      <div class="text-[20px] mt-2"><span class="text-blue-400 font-bold">POST</span> -> request to post a tour, send the tour object in body</div>
+      <a class="text-amber-200" href="https://tour-ak9z.onrender.com/api/v1/tours" target="_blank">https://tour-ak9z.onrender.com/api/v1/tours</a>
+
+      <div class="text-[20px] mt-2"><span class="text-yellow-400 font-bold">PATCH</span> request, to update, send id in url parameter, send the update object in body</div>
+      <a class="text-amber-200" href="https://tour-ak9z.onrender.com/api/v1/tours/633f150ede5194e1323e1337" target="_blank">https://tour-ak9z.onrender.com/api/v1/tours/633f150ede5194e1323e1337</a>
+
+    </div>
+    
+      
+</body>
+</html>
