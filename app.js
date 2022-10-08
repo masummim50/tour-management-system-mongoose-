@@ -10,8 +10,7 @@ app.use(cors())
 app.use(express.json())
 
 app.get("/", (req, res)=> {
-    console.log("server running, without __dirname");
-    res.sendFile("./view/index.html")
+    res.sendFile(__dirname + "/view/index.html")
     
 })
 
